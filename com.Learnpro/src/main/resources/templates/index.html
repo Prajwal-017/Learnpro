@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>LEARN PRO</title>
+<style>
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f2f2f2;
+}
+
+#container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#logo {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#logo img {
+	width: 200px; /* Example image width */
+}
+
+p {
+	text-align: center;
+	font-size: 18px;
+	color: #333;
+}
+
+.tabs {
+	display: flex;
+	justify-content: center;
+}
+
+#logo h1 {
+	text-align: center;
+}
+
+.button {
+	display: inline-block;
+	padding: 15px 25px;
+	margin: 5px;
+	border: none;
+	border-radius: 5px;
+	background-color: #3498db;
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: #2980b9;
+}
+</style>
+</head>
+<body>
+	<div id="container">
+		
+		<h1 style="font-family: forte; text-align: center;">Learn pro</h1>
+		<p>Empowering knowledge, one learner at a time.</p>
+		<div class="tabs">
+			<a th:href="@{/login}" class="button login">LOGIN</a> <a
+				th:href="@{/register}" class="button register">REGISTER</a>
+		</div>
+	</div>
+</body>
+</html>
